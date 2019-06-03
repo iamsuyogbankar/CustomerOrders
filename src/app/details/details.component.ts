@@ -27,4 +27,8 @@ export class DetailsComponent implements OnInit {
     });
   }
 
+  onDelete(){
+    this.filterData = [];
+  }
+
 }

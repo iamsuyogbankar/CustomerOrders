@@ -11,7 +11,8 @@ import { DetailsComponent } from './details/details.component';
 import { OrderDetailsComponent } from './order-details/order-details.component';
 import { AddnewCustomersComponent } from './addnew-customers/addnew-customers.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { DemoComponent } from './demo/demo.component';
+import { Demo2Component } from './demo2/demo2.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,9 @@ import { HttpClientModule } from '@angular/common/http';
     OrderComponent,
     DetailsComponent,
     OrderDetailsComponent,
-    AddnewCustomersComponent
+    AddnewCustomersComponent,
+    DemoComponent,
+    Demo2Component,
   ],
   imports: [
     BrowserModule,

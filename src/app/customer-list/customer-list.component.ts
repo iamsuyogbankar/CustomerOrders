@@ -9,7 +9,7 @@ import { ShareService } from '../share.service';
 export class CustomerListComponent implements OnInit {
 public  customers = [];
 
-  constructor(private shareService: ShareService) { }
+constructor(private shareService: ShareService) { }
 
 
   ngOnInit() {
@@ -17,7 +17,7 @@ public  customers = [];
       .subscribe(data => this.customers = data);
     
       console.log("customer-list");
+      
   }
-
 
 }

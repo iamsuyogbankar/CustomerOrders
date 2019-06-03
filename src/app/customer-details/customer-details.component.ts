@@ -26,11 +26,6 @@ public filterData:any = [];
           this.filterData = this.customers.filter(fill => fill.id == customerId)
              console.log(this.filterData)    
         });
-        // console.log(JSON.stringify(customerData))
-        
-        
-
-        // console.log(this.customers);
     
   }
 

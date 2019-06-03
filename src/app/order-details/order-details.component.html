@@ -1,23 +1,32 @@
-<table class="table">
-    <thead class="thead-dark">
-      <tr>
-        <th scope="col">Order Details</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let orderDetail of filterData">
-        <td>Name</td>
-        <td><input type="text" class="form-control" value="{{ orderDetail.order_name }}" readonly></td>
-      </tr>
-      <tr *ngFor="let orderDetail of filterData">
-        <td>Quantity</td>
-        <td><input type="number" class="form-control" value="{{ orderDetail.quantity }}" readonly></td>
-      </tr>
-      <tr *ngFor="let orderDetail of filterData">
-        <td>Order Number</td>
-        <td><input type="text" class="form-control" value="{{ orderDetail.order_no }}" readonly></td>
-      </tr>
-      
-    </tbody>
-  </table>
+<div class="container">
+  <div class="card">
+    <div class="card-header"><h3>order details</h3></div>
+    <div class="card-body">
+        <table class="table table-bordered table-striped">
+          <thead class="thead-light">
+              <tr>
+                <th scope="col">Order Name</th>
+                <th scope="col">Action</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let orderDetail of filterData">
+              <td>Name</td>
+              <td><input type="text" class="form-control" value="{{ orderDetail.order_name }}" readonly></td>
+            </tr>
+            <tr *ngFor="let orderDetail of filterData">
+              <td>Quantity</td>
+              <td><input type="number" class="form-control" value="{{ orderDetail.quantity }}" readonly></td>
+            </tr>
+            <tr *ngFor="let orderDetail of filterData">
+              <td>Order Number</td>
+              <td><input type="text" class="form-control" value="{{ orderDetail.order_no }}" readonly></td>
+            </tr>      
+          </tbody>
+    </table>
+    </div>
+  </div>
+</div>
+    
+    
   
