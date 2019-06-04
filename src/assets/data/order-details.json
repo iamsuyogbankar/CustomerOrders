@@ -9,5 +9,9 @@
     {"id": 8, "customer_id": 3, "order_no": "ORD-108", "order_name": "car", "quantity": "3"},
     {"id": 9, "customer_id": 3, "order_no": "ORD-109", "order_name": "bike", "quantity": "3"},
     {"id": 10, "customer_id": 3, "order_no": "ORD-1010", "order_name": "ball", "quantity": "3"},
-    {"id": 11, "customer_id": 3, "order_no": "ORD-1011", "order_name": "bat", "quantity": "3"}
+    {"id": 11, "customer_id": 3, "order_no": "ORD-1011", "order_name": "bat", "quantity": "3"},
+    {"id": 12, "customer_id": 4, "order_no": "ORD-1012", "order_name": "water bottle", "quantity": "3"},
+    {"id": 13, "customer_id": 4, "order_no": "ORD-1013", "order_name": "bat", "quantity": "3"},
+    {"id": 14, "customer_id": 5, "order_no": "ORD-1014", "order_name": "sphagetti", "quantity": "3"},
+    {"id": 15, "customer_id": 5, "order_no": "ORD-1015", "order_name": "noodles", "quantity": "3"}
 ] 

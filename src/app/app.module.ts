@@ -11,6 +11,7 @@ import { DetailsComponent } from './details/details.component';
 import { OrderDetailsComponent } from './order-details/order-details.component';
 import { AddnewCustomersComponent } from './addnew-customers/addnew-customers.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DashboardComponent } from './dashboard/dashboard.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
     DetailsComponent,
     OrderDetailsComponent,
     AddnewCustomersComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,

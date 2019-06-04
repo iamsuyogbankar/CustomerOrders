@@ -18,6 +18,10 @@
               <td><input type="number" class="form-control" value="{{ customerDetail.mobile }}"></td>
             </tr>
             <tr *ngFor="let customerDetail of filterData">
+                <td>Email Id</td>
+                <td><input type="email" class="form-control" value="{{ customerDetail.email }}"></td>
+              </tr>
+            <tr *ngFor="let customerDetail of filterData">
               <td>Address</td>
               <td><textarea name="" id="" cols="15" rows="3" class="form-control" value="{{ customerDetail.address }}"></textarea></td>
             </tr>            
