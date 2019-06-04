@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { ShareService } from '../share.service';
 
 @Component({
@@ -9,6 +9,8 @@ import { ShareService } from '../share.service';
 export class CustomerListComponent implements OnInit {
 public  customers = [];
 
+@Output() messageEvent = new EventEmitter<any>();
+
 constructor(private shareService: ShareService) { }
 
 
@@ -18,6 +20,10 @@ constructor(private shareService: ShareService) { }
     
       console.log("customer-list");
       
+  }
+
+  loadCustomerName(){
+    this.messageEvent.emit(this.customers);
   }
 
 }

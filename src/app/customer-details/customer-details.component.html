@@ -12,22 +12,22 @@
               <tbody style="text-align:center;">
                   <tr *ngFor="let customerid of filterData">
                     <td><strong>Orders</strong></td>
-                    <td><a routerLink="/order/{{customerid.id}}" class="btn btn-outline-danger btn-md">Click</a></td>
+                    <td><a routerLink="/order/{{customerid.id}}" class="btn btn-outline-danger btn-md" (click)="onCustomerDetails()">Click</a></td>
                   </tr>
             
                   <tr *ngFor="let customerid of filterData">
                     <td><strong>Details</strong></td>
-                    <td><a routerLink="/details/{{customerid.id}}" class="btn btn-outline-danger btn-md">Click</a></td>
+                    <td><a routerLink="/details/{{customerid.id}}" class="btn btn-outline-danger btn-md" (click)="onCustomerDetails()">Click</a></td>
                   </tr>
             
                   <tr *ngFor="let customerid of filterData">
                     <td><strong>Edit</strong></td>
-                    <td><a routerLink="/details/{{customerid.id}}" class="btn btn-outline-danger btn-md">Click</a></td>
+                    <td><a routerLink="/details/{{customerid.id}}" class="btn btn-outline-danger btn-md" (click)="onCustomerDetails()">Click</a></td>
                   </tr>
             
                   <tr *ngFor="let customerid of filterData">
                     <td><strong>Delete</strong></td>
-                    <td><a routerLink="/details/{{customerid.id}}" class="btn btn-outline-danger btn-md">Click</a></td>
+                    <td><a routerLink="/details/{{customerid.id}}" class="btn btn-outline-danger btn-md" (click)="onCustomerDetails()">Click</a></td>
                   </tr>
                 
               </tbody>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,10 +6,22 @@ import { Router } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'TaskAppNew';
   public router:any;
-  constructor(private _router: Router){
-      this.router = this._router.navigate(['/customer-details/:id'])
+
+  public incomingarray = [];
+  public filterData:any = [];
+  public customerDetailarray:any = [];
+
+  constructor(private _router: Router, ){
+      
+  }
+
+  ngOnInit(){
+    
+    var previosdata = 
+    this.incomingarray;
+    // this.filterData;
   }
 }

@@ -12,7 +12,8 @@
           <tbody>
             <tr *ngFor="let customer of customers">
               <td>{{ customer.name | uppercase }}</td>
-              <td><a routerLink="/customer-details/{{customer.id}}" class="btn btn-outline-danger btn-md">View Details</a></td>
+              <td><a routerLink="/customer-details/{{customer.id}}" 
+                class="btn btn-outline-danger btn-md" (click)="loadCustomerName()">View Details</a></td>
             </tr>            
           </tbody>
         </table>
